@@ -13,3 +13,6 @@ docker network prune -f
 docker system prune -f
 
 sudo rm -rf /var/lib/docker/volumes/*
+
+docker-mariadb       latest              a590afb36557        59 seconds ago      228MB
+
