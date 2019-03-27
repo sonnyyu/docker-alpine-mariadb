@@ -1,22 +1,6 @@
 FROM yobasystems/alpine:3.9.2-amd64
 
-ARG BUILD_DATE
-ARG VCS_REF
-
-LABEL maintainer="Dominic Taylor <dominic@yobasystems.co.uk>" \
-    architecture="amd64/x86_64" \
-    mariadb-version="10.3.13" \
-    alpine-version="3.9.2" \
-    build="21-Mar-2019" \
-    org.opencontainers.image.title="alpine-mariadb" \
-    org.opencontainers.image.description="MariaDB Docker image running on Alpine Linux" \
-    org.opencontainers.image.authors="Dominic Taylor <dominic@yobasystems.co.uk>" \
-    org.opencontainers.image.vendor="Yoba Systems" \
-    org.opencontainers.image.version="v10.3.13" \
-    org.opencontainers.image.url="https://hub.docker.com/r/yobasystem /alpine-mariadb/" \
-    org.opencontainers.image.source="https://github.com/yobasystems/alpine-mariadb" \
-    org.opencontainers.image.revision=$VCS_REF \
-    org.opencontainers.image.created=$BUILD_DATE
+MAINTAINER Sonny Yu <sonnyyuirm@gmail.com>
 
 RUN apk add --no-cache mariadb mariadb-client mariadb-server-utils pwgen tzdata && \
     rm -f /var/cache/apk/* /tmp/*
