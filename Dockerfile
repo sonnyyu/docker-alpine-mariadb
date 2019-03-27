@@ -1,4 +1,3 @@
-#FROM yobasystems/alpine:3.9.2-amd64
 FROM alpine:3.9
 
 MAINTAINER Sonny Yu <sonnyyuirm@gmail.com>
